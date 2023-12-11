@@ -1,0 +1,92 @@
+Certainly! I have integrated the chatbot and chatbox buttons into the existing HTML code, creating two separate pages for each. Additionally, I've added placeholder links for the new pages. Replace these links with the actual links once you have the respective HTML files ready.
+
+**Main Page (index.html):**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video and Transcript</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        #transcript-url {
+            margin-bottom: 20px;
+        }
+
+        #video-container {
+            margin-bottom: 20px;
+        }
+
+        #link-input {
+            width: 80%;
+            padding: 5px;
+        }
+
+        #load-button, #chatbot-button, #chatbox-button {
+            padding: 8px;
+            border: 1px solid #4CAF50;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        #video-link {
+            color: #0066cc;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <label for="link-input">Paste YouTube Video Link:</label>
+    <input type="text" id="link-input" placeholder="Enter YouTube video link...">
+    <button id="load-button" onclick="loadVideo()">Load Video</button>
+    <a href="index.html" target="_blank"><button id="chatbot-button">Chatbot</button></a>
+    <a href="new2.html" target="_blank"><button id="chatbox-button">Chatbox</button></a>
+
+    <div id="transcript-url">
+        <p>
+            Transcript URL: <a id="video-link" href="#" target="_blank">N/A</a>
+        </p>
+    </div>
+
+    <h1>Understanding Neural Networks</h1>
+    <div id="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rEDzUT3ymw4" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <p>
+        A neural network can be visualized as a black box, much like the brain of a self-driving car. It takes inputs from various sensors and transforms them into outputs that control the car's actions. The essential building blocks of a neural network are the "neurons," and these neurons are organized into layers.
+    </p>
+    <p>
+        Each layer of neurons interacts with the next layer through "weighted connections," which are essentially links with attached real-valued numbers. The neuron takes the value of a connected neuron, multiplies it by the weight of the connection, adds up these values along with the neuron's bias, and passes the result through an "activation function." This function mathematically transforms the value before it's forwarded to the next neuron. This process continues until the output layer is reached.
+    </p>
+    <p>
+        In essence, the neural network is a complex system that propagates inputs through its layers, producing desired outputs. The crux of neural networks lies in finding the optimal weights for these connections. This is achieved through various techniques, including machine learning.
+    </p>
+    <p>
+        While this overview provides a glimpse into the workings of neural networks, the details of weight optimization and machine learning techniques are topics for further exploration.
+    </p>
+    <script>
+        // You can add JavaScript functionality here if needed
+    </script>
+</body>
+</html>
+```
+
+Replace `"chatbot.html"` and `"chatbox.html"` with the actual names of your chatbot and chatbox HTML files. This code will open the chatbot and chatbox pages in new tabs when the respective buttons are clicked.
